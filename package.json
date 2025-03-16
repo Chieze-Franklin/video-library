@@ -1,0 +1,22 @@
+{
+    "name": "todo",
+    "packageManager": "yarn@1.22.22",
+    "private": true,
+    "scripts": {
+        "build:backend": "yarn workspace backend tsc",
+        "build:frontend": "yarn workspace frontend tsc -b && vite build",
+        "dev:backend": "yarn workspace backend nodemon src/index.ts",
+        "dev:frontend": "yarn workspace frontend vite",
+        "git:push": "git push origin $(git symbolic-ref --short HEAD)",
+        "start:frontend": "yarn workspace frontend vite preview",
+        "test:backend": "yarn workspace backend jest --config jest.config.js",
+        "version:frontend": "yarn workspace frontend version patch --new-version $VERSION"
+    },
+    "workspaces": [
+        "packages/*"
+    ],
+    "version": "0.0.1",
+    "repository": "git@github.com:Chieze-Franklin/video-library.git",
+    "author": "Franklin Chieze <chieze.franklin@gmail.com>",
+    "license": "MIT"
+}
