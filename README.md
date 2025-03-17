@@ -10,3 +10,14 @@ We achieve this by taking advantage of Yarn's built-in support for monorepos.
 To get started run the following commands in the root directory:
 
 - `yarn install` to install all dependencies
+
+## Running the Application
+
+### Backend
+
+To run the backend server:
+
+- Run `yarn dev` in the _packages/backend/_ directory OR
+- Run `yarn dev:backend` in the root directory
+
+The backend server will be accessible at `localhost:3000`.
