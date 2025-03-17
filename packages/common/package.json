@@ -1,12 +1,10 @@
 {
-  "name": "backend",
+  "name": "common",
   "version": "0.0.1",
-  "description": "API for the Video Library app",
+  "description": "Common/shared code for the Video Library app",
   "main": "index.js",
   "scripts": {
     "build": "tsc",
-    "dev": "nodemon src/index.ts",
-    "start": "node dist/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -19,19 +17,8 @@
     "url": "https://github.com/Chieze-Franklin/video-library/issues"
   },
   "homepage": "https://github.com/Chieze-Franklin/video-library#readme",
-  "dependencies": {
-    "body-parser": "^1.20.3",
-    "cors": "^2.8.5",
-    "express": "^4.21.1",
-    "zod": "^3.22.4"
-  },
   "devDependencies": {
-    "@types/body-parser": "^1.19.5",
-    "@types/cors": "^2.8.17",
-    "@types/express": "^5.0.0",
     "@types/node": "^22.7.7",
-    "nodemon": "^3.1.7",
-    "ts-node": "^10.9.2",
     "typescript": "^5.6.3"
   }
 }
