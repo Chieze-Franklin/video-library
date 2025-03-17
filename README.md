@@ -21,3 +21,12 @@ To run the backend server:
 - Run `yarn dev:backend` in the root directory
 
 The backend server will be accessible at `localhost:3000`.
+
+### Frontend
+
+To run the frontend server:
+
+- Run `yarn dev` in the _packages/frontend/_ directory OR
+- Run `yarn dev:frontend` in the root directory
+
+The backend server will be accessible at `localhost:8080`.
