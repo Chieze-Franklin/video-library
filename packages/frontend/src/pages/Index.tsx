@@ -18,13 +18,13 @@ const Index = () => {
     page: 1,
     limit: ITEMS_PER_PAGE,
   });
-  
+
   // State for the selected video
   const [selectedVideo, setSelectedVideo] = useState<Video | null>(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   // Fetch available tags
-  const { data: tagsResponse } = useQuery<ApiResponse<string[]>>({
+  const { data: tagsResponse } = useQuery<string[]>({
     queryKey: ["tags"],
     queryFn: () => api.getTags(),
   });
@@ -78,7 +78,7 @@ const Index = () => {
         <ShellTitle>Video Library</ShellTitle>
         <FilterBar
           onFilterChange={handleFilterChange}
-          availableTags={tagsResponse?.data || []}
+          availableTags={tagsResponse || []}
           loading={isLoading}
         />
       </ShellHeader>

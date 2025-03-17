@@ -1,3 +1,5 @@
+import { z } from 'zod';
+
 export interface Video {
   id: string;
   title: string;
@@ -27,3 +29,13 @@ export interface ApiFilters {
   startDate?: string;
   endDate?: string;
 }
+
+export const QuerySchema = z.object({
+  page: z.string().transform(Number).default('1'),
+  limit: z.string().transform(Number).default('12'),
+  search: z.string().optional(),
+  sortBy: z.enum(['newest', 'oldest', 'az', 'za']).default('newest'),
+  tags: z.string().optional(),
+  startDate: z.string().optional(),
+  endDate: z.string().optional(),
+});

@@ -16,16 +16,16 @@ export const getVideos = async (filters: ApiFilters = {}): Promise<ApiResponse<V
   if (filters.startDate) params.append('startDate', filters.startDate);
   if (filters.endDate) params.append('endDate', filters.endDate);
 
-  const res = await api.get<Video[]>('/videos', { params });
-  return res;
+  const { data } = await api.get<ApiResponse<Video[]>>('/videos', { params });
+  return data;
 };
 
-export const getVideo = async (id: string): Promise<ApiResponse<Video>> => {
-  const res = await api.get<Video>(`/videos/${id}`);
-  return res;
+export const getVideo = async (id: string): Promise<Video> => {
+  const { data } = await api.get<Video>(`/videos/${id}`);
+  return data;
 };
 
-export const getTags = async (): Promise<ApiResponse<string[]>> => {
-  const res = await api.get<string[]>('/tags');
-  return res;
+export const getTags = async (): Promise<string[]> => {
+  const { data } = await api.get<string[]>('/tags');
+  return data;
 };
