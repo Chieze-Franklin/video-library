@@ -122,6 +122,23 @@ Response:
 ["programming", "typescript", "tutorial", "design", "css", /* etc */]
 ```
 
+## Error Handling
+
+All API endpoints return appropriate HTTP status codes:
+
+- 200: Success
+- 400: Bad request (invalid parameters)
+- 404: Resource not found
+- 500: Server error
+
+Error responses include a message:
+
+```json
+{
+  "error": "Video not found"
+}
+```
+
 ## Technology Stack
 
 - React
