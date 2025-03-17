@@ -35,6 +35,8 @@ The backend server will be accessible at `localhost:8080`.
 
 ## Features
 
+![Screenshot 2025-03-17 at 14 03 23](https://github.com/user-attachments/assets/17db0162-5c85-49ca-9505-13ec76502b28)
+
 - **Responsive Dashboard**: Modern and elegant grid layout that works on all device sizes
 - **Advanced Search & Filtering**:
   - Search by title
