@@ -2,6 +2,8 @@
 
 A simple full-stack application that allows users to browse and manage their video library.
 
+![Screenshot 2025-03-17 at 13 45 46](https://github.com/user-attachments/assets/f0dfac26-f011-44cc-9770-24f045ea3ba2)
+
 ## Getting Started
 
 The project is set up as a monorepo, with both the backend and frontend existing in the same repo.
